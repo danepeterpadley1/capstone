@@ -1,2 +1,289 @@
 /* Universal Styles */
 
+.mobile {
+    display: none;
+}
+
+.mobile-image {
+    display: none;
+}
+/* offsetting the main content for the nav  */
+.main-content{
+    position: relative;
+    top: 64px;
+}
+
+@media only screen and (max-width: 600px) {
+    .desktop{
+      display: none;
+    }
+  }
+
+
+/* Navigation section  */
+header {
+    height: 64px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+}
+header .content {
+    padding-left: 24px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#logo-name {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.content nav.desktop ul {
+    display: flex;
+    padding-right: 24px;
+}
+
+.content nav.desktop ul li {
+    padding-left: 16px;
+} 
+
+@media only screen and (max-width: 600px) {
+    .content nav.mobile {
+      display: contents;
+    }
+
+    .content nav.mobile ul {
+        display: flex;
+        flex: 3;
+        justify-content: space-between;
+        padding-right: 24px;
+      }
+
+    #company-name {
+        display: none;
+    }
+  }
+
+
+/* on campus section  */
+
+#on-campus-section {
+    display: flex;
+    align-items: center;
+}
+
+#on-campus-section img {
+    padding: 32px 24px;
+    max-width: 60%;
+}
+
+#on-campus-section .text-section {
+    margin-left: 24px;
+    margin-right: 24px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.start-here {
+    background-color: lightgray;
+    padding: 8px 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #on-campus-section {
+      flex-direction: column;
+    }
+
+    #on-campus-section img {
+        max-width: 100%;
+        padding: 0px 0px 32px 0px;
+    }    
+}
+
+
+
+/* options section  */
+#options-section {
+    display: flex;
+}
+
+#options-section #information-main {
+    max-width: 60%;
+    padding:24px 32px;
+}
+
+#options-section #information-main h1 {
+    padding-bottom: 24px;
+}
+
+#options-section .desktop img {
+    width: 100%;    
+}
+
+
+.option {
+    display: flex;
+    align-items: center;
+}
+
+.option img {
+    max-width: 35%;
+    margin: 16px 16px;
+    height: auto;
+}
+
+.option-text-container h3{
+     margin: 8px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    #options-section {
+        padding: 16px 16px 32px 16px;
+    }
+    
+    .option .mobile {
+      display: block;
+      margin: 0px 0px 0px 0px;
+      max-width: 100%; 
+    }
+
+    .mobile-image {
+        display: block;
+    }
+
+
+    .option {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .option-text-container {
+        margin: 16px 0px 64px 16px;
+    }
+  }
+
+
+
+/* start learning section  */
+
+#learning-section {
+    background-color: lightgray;
+}
+
+#learning-section h1 {
+    padding-top: 32px;
+    text-align: center;
+}
+
+#learning-section .course-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px 72px;
+    justify-content: center;
+}
+
+#learning-section .course {
+    background-color: white;
+    max-width: 27%;
+    margin: 32px 32px 0px 0px;
+}
+
+#learning-section .course img{
+    width:100%;
+}
+
+@media only screen and (max-width: 600px) {
+    #learning-section .course-container{
+    flex-direction: column;
+    padding: 32px 16px;
+    }
+
+    #learning-section .course {
+        max-width: 100%;
+        margin: 0px 0px 8px 0px;
+    }
+
+    #learning-section .course h2{
+        margin: 16px 0px 24px 16px;
+    }
+}
+
+/* Thesis section  */
+
+#thesis-exhibition-section h1{
+    text-align: center;
+    padding: 32px 32px;
+}
+
+.thesis-container {
+    display: flex;
+}
+
+.thesis-container .video-section {
+    max-width:60%;
+    padding: 0px 24px 24px 24px;
+}
+
+.thesis-container .video-section h2{
+    padding-bottom: 8px;
+}
+
+video {
+    width: 100%;
+}
+
+.thesis {
+    display: flex;
+    align-items: center;
+}
+
+.thesis .image-container {
+    max-width: 35%;
+    padding: 16px 16px;
+} 
+
+.thesis img {
+    width: 100%;
+    height: auto;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .thesis-container .video-section {
+        max-width:100%;
+        padding: 0px 0px 0px 0px;
+        margin-bottom: 24px;
+    }
+}
+
+
+/* footer section  */
+
+footer {
+    display: flex;
+}
+
+footer p {
+    flex-grow: 1;
+}
+
+footer .desktop {
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    footer .desktop {
+        display: none;
+    }
+
+    footer p {
+        margin: 16px 0px;
+    }
+}

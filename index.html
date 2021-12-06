@@ -11,19 +11,21 @@
 	<!-- navigation header section -->
   <header>
     <div class="content">
-      <a href="index.html" id='logo'><img src="./resources/images/ic-login.svg"></a>
+      <div id="logo-name">
+        <a href="index.html" id='logo'><img src="./resources/images/ic-logo.svg"></a>
+        <a href="index.html"  id='company-name'><span>COLMAR</span>ACADEMY</a>
+      </div>
       <nav class="desktop">
-        <a href="index.html" id='company-name'><span>COLMAR</span>ACADEMY</a>
         <ul>
-          <li><a href="#"></a>On campus</li>
-          <li><a href="#"></a>Online</li>
-          <li><a href="#"></a>Our companies</li>
-          <li><a href="#"></a>Sign in</li>
+          <li><a href="#">On campus</a></li>
+          <li><a href="#">Online</a></li>
+          <li><a href="#">Our companies</a></li>
+          <li><a href="#">Sign in</a></li>
         </ul>
       </nav>
       <nav class="mobile">
         <ul>
-          <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
+          <li><a href="#on-campus-section"><img src="./resources/images/ic-on-campus.svg"></a></li>
           <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
           <li><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
         </ul>
@@ -36,19 +38,19 @@
 
     <!-- on-campus-section -->
     <div id='on-campus-section'>
-      <div class="image-container">
         <img src="./resources/images/banner.jpg">
-      </div>
       <div class="text-section">
         <h1>Learn something new everyday</h1>
         <h2>Lorem ipsum dolor sit amet, consectetur adipicing elit.</h2>
-        <button>Start here</button>
+        <a href="#" class='start-here'>
+          <p >Start here</p>
+        </a>
       </div>
     </div>
   
     <!-- options section -->
     <div id="options-section">
-      <div class="desktop">
+      <div class="desktop" id='information-main'>
         <img src="./resources/images/information-main.jpg" >
         <div class='text-section'>
           <h1>It doesn't hurt to keep practicing</h1>
@@ -61,25 +63,25 @@
         <div class="option">
           <img class= 'desktop' src="./resources/images/information-orientation.jpg">
           <img class= 'mobile' src="./resources/images/information-orientation-mobile.jpg">
-          <div class="option-text-cotainer">
+          <div class="option-text-container">
             <h2>Orientation date</h2>
             <h3>Tue 10/11 & Wed 10/12: 8am-3pm</h3>
             <a href="#">Read more</a>
           </div>
         </div>
         <div class="option">
-          <img class= 'desktop' src="./resources/images/information-campus.jpg">
-          <img class= 'mobile' src="./resources/images/information-campus-mobile.jpg">
-          <div class="option-text-cotainer">
+            <img class= 'desktop' src="./resources/images/information-campus.jpg">
+            <img class= 'mobile' src="./resources/images/information-campus-mobile.jpg">
+          <div class="option-text-container">
             <h2>Our campus</h2>
             <h3>Find which campus is closest by you</h3>
             <a href="#">Read more</a>
           </div>
         </div>
         <div class="option">
-          <img class= 'desktop' src="./resources/images/information-guest-lecture.jpg">
-          <img class= 'mobile' src="./resources/images/information-guest-lecture-mobile.jpg">
-          <div class="option-text-cotainer">
+            <img class= 'desktop' src="./resources/images/information-guest-lecture.jpg">
+            <img class= 'mobile' src="./resources/images/information-guest-lecture-mobile.jpg">
+          <div class="option-text-container">
             <h2 class="desktop">Our guest lecture</h2>
             <h2 class='mobile'>Special guest lecture</h2>
             <h3>Join a keynote with Oliver Sack about music in medical treatment</h3>
@@ -92,53 +94,55 @@
     <!-- learning section  -->
     <div id="learning-section">
       <h1>Start learning</h1>
-      <div class='course'>
-        <img class='desktop' src="resources/images/course-software.jpg" >
-        <div class="course-text-container">
-          <h2>Software Engineering</h2>
-          <h3 class="desktop">COURSES</h3>
-          <h3 class="desktop">Web development, Mobile development, iOT, API</h3>
-        </div>    
-      </div>
-      <div class='course'>
-        <img class='desktop' src="resources/images/course-computer-art.jpg" >
-        <div class="course-text-container">
-          <h2>Computer art</h2>
-          <h3 class="desktop">COURSES</h3>
-          <h3 class="desktop">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</h3>
-        </div>    
-      </div>
-      <div class='course'>
-        <img class='desktop' src="resources/images/course-design.jpg" >
-        <div class="course-text-container">
-          <h2>Design</h2>
-          <h3 class="desktop">COURSES</h3>
-          <h3 class="desktop">User Experience Design,User Research, Visual Design</h3>
-        </div>    
-      </div>
-      <div class='course'>
-        <img class='desktop' src="resources/images/course-data.jpg" >
-        <div class="course-text-container">
-          <h2>Data</h2>
-          <h3 class="desktop">COURSES</h3>
-          <h3 class="desktop">Data Sceince, Big Data, SQL, Data Visualization</h3>
-        </div>    
-      </div>
-      <div class='course'>
-        <img class='desktop' src="resources/images/course-business.jpg" >
-        <div class="course-text-container">
-          <h2>Business</h2>
-          <h3 class="desktop">COURSES</h3>
-          <h3 class="desktop">Product Development, Business Development, Startup</h3>
-        </div>    
-      </div>
-      <div class='course'>
-        <img class='desktop' src="resources/images/course-marketing.jpg" >
-        <div class="course-text-container">
-          <h2>Marketing</h2>
-          <h3 class="desktop">COURSES</h3>
-          <h3 class="desktop">Analytics, Content Marketing, Mobile Marketing</h3>
-        </div>    
+      <div class="course-container">
+        <div class='course'>
+          <img class='desktop' src="resources/images/course-software.jpg" >
+          <div class="course-text-container">
+            <h2>Software Engineering</h2>
+            <h3 class="desktop">COURSES</h3>
+            <h3 class="desktop">Web development, Mobile development, iOT, API</h3>
+          </div>    
+        </div>
+        <div class='course'>
+          <img class='desktop' src="resources/images/course-computer-art.jpg" >
+          <div class="course-text-container">
+            <h2>Computer art</h2>
+            <h3 class="desktop">COURSES</h3>
+            <h3 class="desktop">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</h3>
+          </div>    
+        </div>
+        <div class='course'>
+          <img class='desktop' src="resources/images/course-design.jpg" >
+          <div class="course-text-container">
+            <h2>Design</h2>
+            <h3 class="desktop">COURSES</h3>
+            <h3 class="desktop">User Experience Design,User Research, Visual Design</h3>
+          </div>    
+        </div>
+        <div class='course'>
+          <img class='desktop' src="resources/images/course-data.jpg" >
+          <div class="course-text-container">
+            <h2>Data</h2>
+            <h3 class="desktop">COURSES</h3>
+            <h3 class="desktop">Data Sceince, Big Data, SQL, Data Visualization</h3>
+          </div>    
+        </div>
+        <div class='course'>
+          <img class='desktop' src="resources/images/course-business.jpg" >
+          <div class="course-text-container">
+            <h2>Business</h2>
+            <h3 class="desktop">COURSES</h3>
+            <h3 class="desktop">Product Development, Business Development, Startup</h3>
+          </div>    
+        </div>
+        <div class='course'>
+          <img class='desktop' src="resources/images/course-marketing.jpg" >
+          <div class="course-text-container">
+            <h2>Marketing</h2>
+            <h3 class="desktop">COURSES</h3>
+            <h3 class="desktop">Analytics, Content Marketing, Mobile Marketing</h3>
+          </div>    
+        </div>
       </div>
     </div>
 
@@ -146,39 +150,47 @@
     <!-- Thesis exhibition section  -->
     <div id='thesis-exhibition-section'>
       <h1>Thesis exhibits</h1>
-      <div class="video-section">
-        <video src="./resources/videos/thesis.mp4" controls></video>
-        <div class="desktop">
-          <h2>Reimagine Urban</h2>
-          <h3>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna loareet, efficitur dolor consequat, tristique ligula"</h3>
-        </div>
-      </div>
-      <div class="desktop" id="thesis-container">
-        <div class="thesis">
-          <div class="image-container">
-            <img src="./resources/images/thesis-fisma.jpg" >
-          </div>
-          <div class="text-container">
-            <h2>Fisma: Design and Prototype</h2>
-            <h3>Designer Showcase of new prototype product</h3>
+
+      <div class="thesis-container">
+        <div class="video-section">
+          <video src="./resources/videos/thesis.mp4" controls></video>
+          <div class="desktop">
+            <h2>Reimagine Urban</h2>
+            <h3>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna loareet, efficitur dolor consequat, tristique ligula"</h3>
           </div>
         </div>
-        <div class="thesis">
-          <div class="image-container">
-            <img src="./resources/images/thesis-now-and-then.jpg">
+
+
+
+
+        <div class="desktop" id="thesis-container-2">
+          <div class="thesis">
+            <div class="image-container">
+              <img src="./resources/images/thesis-fisma.jpg" >
+            </div>
+            <div class="text-container">
+              <h2>Fisma: Design and Prototype</h2>
+              <h3>Designer Showcase of new prototype product</h3>
+            </div>
           </div>
-          <div class="text-container">
-            <h2>Now and then</h2>
-            <h3>Research study about New York</h3>
+          <div class="thesis">
+            <div class="image-container">
+              <img src="./resources/images/thesis-now-and-then.jpg">
+            </div>
+            <div class="text-container">
+              <h2>Now and then</h2>
+              <h3>Research study about New York</h3>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+
     <!-- footer section -->
     <footer>
       <p>Colmar Academy All rights reserved<p>
-      <div class="Desktop">
+      <div class="desktop">
         <p><a href="#"></a>Terms</p>
         <p><a href="#"></a>Privacy</p>
       </div>
