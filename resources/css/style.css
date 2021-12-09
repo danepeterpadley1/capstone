@@ -13,6 +13,18 @@
     top: 64px;
 }
 
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+.option-text-container a {
+    color: blue;
+}
 @media only screen and (max-width: 600px) {
     .desktop{
       display: none;
@@ -21,6 +33,10 @@
 
 
 /* Navigation section  */
+header span {
+    font-weight: bold;
+}
+
 header {
     height: 64px;
     width: 100%;
@@ -90,9 +106,10 @@ header .content {
 }
 
 .start-here {
-    background-color: lightgray;
+    background-color: darkgray;
     padding: 8px 0;
     text-align: center;
+    color: white;
 }
 
 @media only screen and (max-width: 600px) {
@@ -208,10 +225,15 @@ header .content {
     #learning-section .course {
         max-width: 100%;
         margin: 0px 0px 8px 0px;
+        background-color: darkgray;
     }
 
     #learning-section .course h2{
         margin: 16px 0px 24px 16px;
+    }
+
+    #learning-section {
+        background-color: white;
     }
 }
 
